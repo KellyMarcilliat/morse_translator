@@ -1,6 +1,6 @@
 class Translator
 
-  def initialize
+  def initialize(eng_msg)
     @dictionary = {"a" => ".-",
                     "b" => "-...",
                     "c" => "-.-.",
@@ -38,5 +38,9 @@ class Translator
                     "9" => "----.",
                     "0" => "-----",
                     " " => " "}
+  end
+
+  def eng_to_morse
+    #code
   end
 end
