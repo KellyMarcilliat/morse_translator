@@ -11,7 +11,7 @@ class CardTest < Minitest::Test
 
   def test_translate_eng_to_morse
     translator = Translator.new("Hello World")
-
+  
     assert_equal "......-...-..--- .-----.-..-..-..", translator.eng_to_morse
   end
 end
