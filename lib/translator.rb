@@ -1,4 +1,7 @@
-class Translator
+require "pry"
+
+class Translator 
+  attr_reader :eng_msg
 
   def initialize(eng_msg)
     @dictionary = {"a" => ".-",
@@ -38,9 +41,11 @@ class Translator
                     "9" => "----.",
                     "0" => "-----",
                     " " => " "}
+    @eng_msg = eng_msg
   end
+  #binding.pry
 
-  def eng_to_morse
-    #code
-  end
+  # def message_split
+  #   #code
+  # end
 end
